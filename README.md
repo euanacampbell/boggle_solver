@@ -1,3 +1,5 @@
+![example workflow](https://github.com/euanacampbell/boggle_solver/blob/master/.github/workflows/python-app.yml/badge.svg)
+
 # Boggle Solver
 
 A recursive method for finding all words in a given square grid.
