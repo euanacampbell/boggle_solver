@@ -126,6 +126,7 @@ class Grid():
     
     def valid_word(self, word):
         """Check if a given word exists"""
+        word = word.upper()
         
         with open('words.txt', "r") as f:
             for line in f:
