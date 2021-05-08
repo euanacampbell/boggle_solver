@@ -1,4 +1,4 @@
-[![python-app Actions Status](https://github.com/euanacampbell/boggle_solver/workflows/python-app/badge.svg)](https://github.com/euanacampbell/boggle_solver/actions)
+[![boggle_test Actions Status](https://github.com/euanacampbell/boggle_solver/workflows/boggle_test/badge.svg)](https://github.com/euanacampbell/boggle_solver/actions)
 
 # Boggle Solver
 
