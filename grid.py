@@ -155,17 +155,17 @@ class Grid():
         """Loop through grid to find all possible words"""
         total = len(self.matrix)*len(self.matrix)
         counter=0
-        print('\ncompletion:')
+        # print('\ncompletion:')
         for row in range(0,len(self.matrix)):
             for column in range(0,len(self.matrix)):
                 current = (row, column) 
                 current_letter = self.get_letter(current) 
 
                 counter+=1
-                print(f"{counter}/{total}")
+                # print(f"{counter}/{total}")
                        
                 self.search([current_letter.grid_pos])
-        print('complete\n')
+        # print('complete\n')
         return(self.words)
 
 
