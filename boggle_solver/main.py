@@ -9,11 +9,10 @@ grid_format_1 = [
         ['L','D','H','C']
     ]
 
-grid_format_2 = [
+grid_2 = [
         ['M','A','P'],
         ['E','T','E'],
         ['D','E','N'],
-        
     ]
 
 grid_format_3 = [
@@ -25,7 +24,7 @@ grid_format_3 = [
     ]
 
 # Create grid instance
-grid = Grid(existing_array=grid_format_2)
+grid = Grid(existing_array=grid_2)
 
 grid.print_grid()
 
@@ -33,10 +32,10 @@ grid.print_grid()
 words = grid.find_all_words()
 sortedwords = sorted(words, key=len)
 
-for word in sortedwords:
-    print(word)
+# for word in sortedwords:
+#     print(word)
 
-sortedwords = sorted(words, key=len)
-print(f"\nWords found: {len(words)}")
-print(f"Shortest word: {sortedwords[0]}")
-print(f"Longest word: {sortedwords[-1]}")
+# sortedwords = sorted(words, key=len)
+# print(f"\nWords found: {len(words)}")
+# print(f"Shortest word: {sortedwords[0]}")
+# print(f"Longest word: {sortedwords[-1]}")

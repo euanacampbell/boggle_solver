@@ -1,5 +1,6 @@
 import random
-from letter import Letter
+from pathlib import Path
+from boggle_solver.letter import Letter
 
 class Grid():
 
@@ -127,8 +128,11 @@ class Grid():
     def valid_word(self, word):
         """Check if a given word exists"""
         word = word.upper()
+
+        base_path = Path(__file__).parent
+        file_path = (base_path / "words.txt").resolve()
         
-        with open('words.txt', "r") as f:
+        with open(file_path, "r") as f:
             for line in f:
                 compare = line[:-1].upper() # removes \n
                 if compare==word:
@@ -140,7 +144,10 @@ class Grid():
     def valid_start(self, letters):
         """Check if the letters given could make the start of a word"""
 
-        with open('words.txt', "r") as f:
+        base_path = Path(__file__).parent
+        file_path = (base_path / "words.txt").resolve()
+        
+        with open(file_path, "r") as f:
             for line in f:
                 compare = line[:-1].upper() # removes \n
 
@@ -155,17 +162,14 @@ class Grid():
         """Loop through grid to find all possible words"""
         total = len(self.matrix)*len(self.matrix)
         counter=0
-        # print('\ncompletion:')
         for row in range(0,len(self.matrix)):
             for column in range(0,len(self.matrix)):
                 current = (row, column) 
                 current_letter = self.get_letter(current) 
 
                 counter+=1
-                # print(f"{counter}/{total}")
                        
                 self.search([current_letter.grid_pos])
-        # print('complete\n')
         return(self.words)
 
 
