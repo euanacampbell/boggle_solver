@@ -1,6 +1,6 @@
 # test_capitalize.py
 
-from letter import Letter
+from boggle_solver.letter import Letter
 
 letterA = Letter('A', (0,0))
 letterB = Letter('B', (2,2))

@@ -1,6 +1,6 @@
 # test_capitalize.py
 
-from grid import Grid
+from boggle_solver.grid import Grid
 
 grid_format_2 = [
         ['M','A','P'],
