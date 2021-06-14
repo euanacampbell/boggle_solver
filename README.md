@@ -39,7 +39,7 @@ grid.print_grid()
 ['D', 'E', 'N']
 ```
 
-Now you can search for all words. This will take ~10 seconds for a 3x3 grid.
+Now search for all words. This will take ~10 seconds for a 3x3 grid.
 
 ```python
 words = grid.find_all_words()
