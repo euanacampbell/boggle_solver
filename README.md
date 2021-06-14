@@ -1,6 +1,8 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) [![boggle_test Actions Status](https://github.com/euanacampbell/boggle_solver/workflows/boggle_test/badge.svg)](https://github.com/euanacampbell/boggle_solver/actions)
 
-A recursive method for finding all words in a given square grid.
+GitHub: [github.com/euanacampbell/boggle_solver](https://github.com/euanacampbell/boggle_solver)
+
+PyPi: [pypi.org/project/boggle-solver](https://pypi.org/project/boggle-solver/)
 
 ## Installation
 
