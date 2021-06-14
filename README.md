@@ -11,14 +11,14 @@ pip3 install boggle-solver
 ## Import
 
 ```python
-from boggle_solver.grid import Grid
+from boggle_solver import *
 ```
 
 ## Usage
 Create a 2-dimensional array and pass this into the package.
 
 ```python
-from boggle_solver.grid import Grid
+from boggle_solver import *
 
 grid = [
         ['M','A','P'],
@@ -26,23 +26,23 @@ grid = [
         ['D','E','N'],
        ]
 
-grid=Grid(grid)
+boggle=Grid(grid)
 ```
 
 To confirm this worked, the below function can be used.
 
 ```python
-grid.print_grid()
+boggle.print_grid()
 
 ['M', 'A', 'P']
 ['E', 'T', 'E']
 ['D', 'E', 'N']
 ```
 
-Now search for all words. This will take ~10 seconds for a 3x3 grid.
+Now search for all words. This will take ~20 seconds for a 3x3 grid.
 
 ```python
-words = grid.find_all_words()
+words = boggle.find_all_words()
 
 print(words[:10])
 
